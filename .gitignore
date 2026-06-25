@@ -1,0 +1,31 @@
+# Node.js
+dashboard/node_modules/
+dashboard/dist/
+dashboard/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+venv/
+ENV/
+
+# Databases
+# We exclude local SQLite lock/temp files, but keep the seeded database for portfolio demonstration
+*.db-journal
+*.db-wal
+*.db-shm
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp

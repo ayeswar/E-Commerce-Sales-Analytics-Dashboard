@@ -1,0 +1,312 @@
+{
+  "rfm_summary": {
+    "segments": {
+      "About to Sleep": {
+        "count": 113,
+        "avg_spend": 4010.59
+      },
+      "At Risk": {
+        "count": 180,
+        "avg_spend": 14675.58
+      },
+      "Champions": {
+        "count": 92,
+        "avg_spend": 21502.27
+      },
+      "Hibernating": {
+        "count": 91,
+        "avg_spend": 2130.2
+      },
+      "Loyal Customers": {
+        "count": 153,
+        "avg_spend": 15055.61
+      },
+      "Potential Loyalists": {
+        "count": 168,
+        "avg_spend": 7388.67
+      }
+    },
+    "customer_types": {
+      "Consumer": 240,
+      "Corporate": 265,
+      "Home Office": 295
+    }
+  },
+  "forecast_summary": [
+    {
+      "month": "2023-01",
+      "actual": 209530.43,
+      "forecast": null
+    },
+    {
+      "month": "2023-02",
+      "actual": 181535.46,
+      "forecast": null
+    },
+    {
+      "month": "2023-03",
+      "actual": 331801.95,
+      "forecast": null
+    },
+    {
+      "month": "2023-04",
+      "actual": 143358.05,
+      "forecast": null
+    },
+    {
+      "month": "2023-05",
+      "actual": 253817.6,
+      "forecast": null
+    },
+    {
+      "month": "2023-06",
+      "actual": 265112.83,
+      "forecast": null
+    },
+    {
+      "month": "2023-07",
+      "actual": 231984.36,
+      "forecast": null
+    },
+    {
+      "month": "2023-08",
+      "actual": 174165.09,
+      "forecast": null
+    },
+    {
+      "month": "2023-09",
+      "actual": 245094.13,
+      "forecast": null
+    },
+    {
+      "month": "2023-10",
+      "actual": 300776.15,
+      "forecast": null
+    },
+    {
+      "month": "2023-11",
+      "actual": 481232.09,
+      "forecast": null
+    },
+    {
+      "month": "2023-12",
+      "actual": 423830.11,
+      "forecast": null
+    },
+    {
+      "month": "2024-01",
+      "actual": 138871.24,
+      "forecast": null
+    },
+    {
+      "month": "2024-02",
+      "actual": 180182.61,
+      "forecast": null
+    },
+    {
+      "month": "2024-03",
+      "actual": 301289.83,
+      "forecast": null
+    },
+    {
+      "month": "2024-04",
+      "actual": 213004.54,
+      "forecast": null
+    },
+    {
+      "month": "2024-05",
+      "actual": 264706.21,
+      "forecast": null
+    },
+    {
+      "month": "2024-06",
+      "actual": 334657.86,
+      "forecast": null
+    },
+    {
+      "month": "2024-07",
+      "actual": 135043.67,
+      "forecast": null
+    },
+    {
+      "month": "2024-08",
+      "actual": 241275.84,
+      "forecast": null
+    },
+    {
+      "month": "2024-09",
+      "actual": 300079.25,
+      "forecast": null
+    },
+    {
+      "month": "2024-10",
+      "actual": 195072.32,
+      "forecast": null
+    },
+    {
+      "month": "2024-11",
+      "actual": 339410.95,
+      "forecast": null
+    },
+    {
+      "month": "2024-12",
+      "actual": 406169.0,
+      "forecast": null
+    },
+    {
+      "month": "2025-01",
+      "actual": 133693.31,
+      "forecast": null
+    },
+    {
+      "month": "2025-02",
+      "actual": 164908.73,
+      "forecast": null
+    },
+    {
+      "month": "2025-03",
+      "actual": 224607.96,
+      "forecast": null
+    },
+    {
+      "month": "2025-04",
+      "actual": 187444.04,
+      "forecast": null
+    },
+    {
+      "month": "2025-05",
+      "actual": 228073.17,
+      "forecast": null
+    },
+    {
+      "month": "2025-06",
+      "actual": 231984.98,
+      "forecast": null
+    },
+    {
+      "month": "2025-07",
+      "actual": 146914.23,
+      "forecast": null
+    },
+    {
+      "month": "2025-08",
+      "actual": 114434.05,
+      "forecast": null
+    },
+    {
+      "month": "2025-09",
+      "actual": 207359.6,
+      "forecast": null
+    },
+    {
+      "month": "2025-10",
+      "actual": 279327.11,
+      "forecast": null
+    },
+    {
+      "month": "2025-11",
+      "actual": 396261.25,
+      "forecast": null
+    },
+    {
+      "month": "2025-12",
+      "actual": 204654.5,
+      "forecast": null
+    },
+    {
+      "month": "2026-01",
+      "actual": null,
+      "forecast": 148933.95
+    },
+    {
+      "month": "2026-02",
+      "actual": null,
+      "forecast": 163355.53
+    },
+    {
+      "month": "2026-03",
+      "actual": null,
+      "forecast": 265129.04
+    },
+    {
+      "month": "2026-04",
+      "actual": null,
+      "forecast": 169263.92
+    },
+    {
+      "month": "2026-05",
+      "actual": null,
+      "forecast": 231412.44
+    },
+    {
+      "month": "2026-06",
+      "actual": null,
+      "forecast": 257688.41
+    }
+  ],
+  "discount_impact": [
+    {
+      "discount": 0.0,
+      "sales": 5176283.34,
+      "profit": 1276684.95,
+      "count": 4300,
+      "margin_pct": 24.66
+    },
+    {
+      "discount": 0.1,
+      "sales": 673632.32,
+      "profit": 112287.26,
+      "count": 790,
+      "margin_pct": 16.67
+    },
+    {
+      "discount": 0.15,
+      "sales": 546028.2,
+      "profit": 76348.09,
+      "count": 539,
+      "margin_pct": 13.98
+    },
+    {
+      "discount": 0.2,
+      "sales": 1420140.16,
+      "profit": -18272.43,
+      "count": 1216,
+      "margin_pct": -1.29
+    },
+    {
+      "discount": 0.3,
+      "sales": 297920.82,
+      "profit": -114986.15,
+      "count": 242,
+      "margin_pct": -38.6
+    },
+    {
+      "discount": 0.4,
+      "sales": 246790.36,
+      "profit": -54183.4,
+      "count": 428,
+      "margin_pct": -21.96
+    },
+    {
+      "discount": 0.5,
+      "sales": 184043.96,
+      "profit": -172364.32,
+      "count": 210,
+      "margin_pct": -93.65
+    },
+    {
+      "discount": 0.6,
+      "sales": 202663.64,
+      "profit": -161899.08,
+      "count": 402,
+      "margin_pct": -79.89
+    },
+    {
+      "discount": 0.8,
+      "sales": 64161.7,
+      "profit": -175940.42,
+      "count": 235,
+      "margin_pct": -274.21
+    }
+  ]
+}
