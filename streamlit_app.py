@@ -52,7 +52,7 @@ st.markdown("""
         color: #ffffff;
     }
 </style>
-""", unsafe_allow_value_html=True)
+""", unsafe_allow_html=True)
 
 # --- Database & Cache Connectors ---
 DB_PATH = os.path.join("data", "superstore.db")
