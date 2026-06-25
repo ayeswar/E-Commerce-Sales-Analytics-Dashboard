@@ -6,6 +6,69 @@ import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime
 
+# Pre-packaged SQL query templates for the portfolio showcase
+SQL_TEMPLATES = [
+    {
+        "id": "top_products",
+        "name": "Top 10 Products by Revenue",
+        "query": """-- Identify top 10 products based on net sales revenue
+SELECT 
+    p.product_id,
+    p.product_name,
+    p.category,
+    ROUND(SUM(od.sales), 2) as total_sales,
+    SUM(od.quantity) as quantity_sold,
+    ROUND(SUM(od.profit), 2) as net_profit
+FROM order_details od
+JOIN products p ON od.product_id = p.product_id
+GROUP BY p.product_id, p.product_name, p.category
+ORDER BY total_sales DESC
+LIMIT 10;"""
+    },
+    {
+        "id": "sql_rfm",
+        "name": "Customer RFM Segments Summary",
+        "query": """-- Aggregate customer counts and metrics by RFM segment
+SELECT 
+    segment as customer_value_segment,
+    COUNT(*) as customer_count,
+    ROUND(AVG(recency), 1) as avg_recency_days,
+    ROUND(AVG(frequency), 1) as avg_order_frequency,
+    ROUND(AVG(monetary), 2) as avg_lifetime_spend
+FROM customer_segments
+GROUP BY segment
+ORDER BY avg_lifetime_spend DESC;"""
+    },
+    {
+        "id": "discount_leakage",
+        "name": "Discount Profit Leakage Analysis",
+        "query": """-- Analyze profit margins across different discount rates
+SELECT 
+    discount as discount_rate,
+    COUNT(DISTINCT order_id) as order_count,
+    SUM(quantity) as items_sold,
+    ROUND(SUM(sales), 2) as total_sales,
+    ROUND(SUM(profit), 2) as net_profit,
+    ROUND((SUM(profit) / SUM(sales)) * 100, 2) as profit_margin_pct
+FROM order_details
+GROUP BY discount
+ORDER BY discount;"""
+    },
+    {
+        "id": "delayed_shipping",
+        "name": "Peak Season Shipping Delays",
+        "query": """-- Compare average shipping delays by ship mode during peak holiday seasons (Nov-Dec)
+SELECT 
+    ship_mode,
+    COUNT(*) as total_orders,
+    ROUND(AVG(JULIANDAY(ship_date) - JULIANDAY(order_date)), 2) as avg_days_to_ship
+FROM orders
+WHERE STRFTIME('%m', order_date) IN ('11', '12')
+GROUP BY ship_mode
+ORDER BY avg_days_to_ship DESC;"""
+    }
+]
+
 # --- Page Configuration & Premium Theme Styling ---
 st.set_page_config(
     page_title="Aura Sales Analytics Suite",
